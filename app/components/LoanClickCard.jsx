@@ -8,43 +8,43 @@ const loanProducts = [
   },
   {
     title: "Business Loan",
-    href: "/business-loan",
+    href: "https://crm.oneandro.com/customer-service?d=c29mdGNvZGU9UktNQUhNVTMyNTk0ODU2JnByb2R1Y3RfaWQ9MSZzY29yZV90eXBlPUVxdWlmYXgmY2FtcGFpZ25fdHlwZT1Qcm9kdWN0JnByb2R1Y3RfY2F0ZWdvcnlfaWQ9MiZjYXRlZ29yeV9wdXJwb3NlX2lkPSZzb3VyY2U9Zmluc2FjayZzdWJfc291cmNlPXdlYnNpdGUmam91cm5leVN0b3BQb2ludD0mTGVuZGVyVHlwZT0mdXRtX3NvdXJjZT1xcl9nZW5lcmF0b3ImbG9naW5faWQ9MzI1OTQ4JnRva2VuX2tleT10cThla2g0Wg%3D%3D",
     image: "/product-icons/buisness-icon.svg"
   },
   {
     title: "Home Loan",
-    href: "/home-loan",
+    href: "https://crm.oneandro.com/customer-service?d=c29mdGNvZGU9UktNQUhNVTMyNTk0ODU2JnByb2R1Y3RfaWQ9MSZzY29yZV90eXBlPUVxdWlmYXgmY2FtcGFpZ25fdHlwZT1Qcm9kdWN0JnByb2R1Y3RfY2F0ZWdvcnlfaWQ9MyZjYXRlZ29yeV9wdXJwb3NlX2lkPSZzb3VyY2U9Zmluc2FjayZzdWJfc291cmNlPXdlYnNpdGUmam91cm5leVN0b3BQb2ludD0mTGVuZGVyVHlwZT0mdXRtX3NvdXJjZT1xcl9nZW5lcmF0b3ImbG9naW5faWQ9MzI1OTQ4JnRva2VuX2tleT1SQ0gyRnNDeg%3D%3D",
     image: "/product-icons/home-icon.svg"
   },
   {
     title: "Gold Loan",
-    href: "/gold-loan",
+    href: "https://crm.oneandro.com/customer-service?d=c29mdGNvZGU9UktNQUhNVTMyNTk0ODU2JnByb2R1Y3RfaWQ9MSZzY29yZV90eXBlPUVxdWlmYXgmY2FtcGFpZ25fdHlwZT1Qcm9kdWN0JnByb2R1Y3RfY2F0ZWdvcnlfaWQ9NSZjYXRlZ29yeV9wdXJwb3NlX2lkPSZzb3VyY2U9Zmluc2FjayZzdWJfc291cmNlPXdlYnNpdGUmam91cm5leVN0b3BQb2ludD0mTGVuZGVyVHlwZT0mdXRtX3NvdXJjZT1xcl9nZW5lcmF0b3ImbG9naW5faWQ9MzI1OTQ4JnRva2VuX2tleT1vSFdPZW82cg%3D%3D",
     image: "/product-icons/gold-icon.svg"
   },
 
   {
     title: "Loan Against Property",
-    href: "/loan-against-property",
+    href: "https://crm.oneandro.com/customer-service?d=c29mdGNvZGU9UktNQUhNVTMyNTk0ODU2JnByb2R1Y3RfaWQ9MSZzY29yZV90eXBlPUVxdWlmYXgmY2FtcGFpZ25fdHlwZT1Qcm9kdWN0JnByb2R1Y3RfY2F0ZWdvcnlfaWQ9NCZjYXRlZ29yeV9wdXJwb3NlX2lkPSZzb3VyY2U9Zmluc2FjayZzdWJfc291cmNlPXdlYnNpdGUmam91cm5leVN0b3BQb2ludD0mTGVuZGVyVHlwZT0mdXRtX3NvdXJjZT1xcl9nZW5lcmF0b3ImbG9naW5faWQ9MzI1OTQ4JnRva2VuX2tleT1Pd1FyeE9jMA%3D%3D",
     image: "/product-icons/secure-icon.svg"
   },
   {
     title: "Investment FD & Mutual Funds",
-    href: "/investment-fd-mutual-funds",
+    href: "/product/investment",
     image: "/product-icons/investment-icon.svg"
   },
   {
     title: "Demat Account",
-    href: "/demat-account",
+    href: "/product/demate",
     image: "/product-icons/demat-icon.svg"
   },
   {
     title: "Bank Account",
-    href: "/bank-account",
+    href: "/product/bank-account",
     image: "/product-icons/bank-icon.svg"
   },
   {
     title: "Insurance",
-    href: "/insurance",
+    href: "https://crm.oneandro.com/customer-service?d=c29mdF9jb2RlPVJLTUFITVUzMjU5NDg1NiZ0b2tlbl9rZXk9OTJwczlxbXEmbG9naW5faWQ9MzI1OTQ4JnNoYXJlX2xlYWRfdHlwZT0xJnV0bV9zb3VyY2U9c2hhcmVfbGluaw%3D%3D",
     image: "/product-icons/insurance-icon.svg"
   },
   {
@@ -69,8 +69,8 @@ export default function LoanClickCard() {
             href={product.href}
             aria-label={product.title}
             className={`w-full max-w-[280px] ${index === loanProducts.length - 1 && loanProducts.length % 3 === 1
-                ? "min-[600px]:col-start-2"
-                : ""
+              ? "min-[600px]:col-start-2"
+              : ""
               }`}
           >
             <div className="group overflow-hidden rounded-xl bg-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
