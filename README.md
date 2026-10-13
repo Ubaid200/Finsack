@@ -18,6 +18,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
+## Contact form email
+
+The contact form sends messages through SMTP. Copy `.env.example` to `.env.local` and configure
+`SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER`, `SMTP_PASSWORD`, and `SMTP_FROM` with your
+SMTP provider's settings. Set `CONTACT_EMAIL` to the address that should receive contact messages.
+Keep SMTP credentials private and configure the same environment variables in your deployment
+platform. The configured sender address must be accepted by your SMTP provider.
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
